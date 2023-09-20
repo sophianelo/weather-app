@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="weatherSearch">
+      <form id="form-search">
+        <input
+          type="text"
+          placeholder="Type a city.."
+          autofocus="on"
+          autocomplete="off"
+          id="input-text"
+          class="classInputText"
+        />
+
+        <input type="submit" value="Search" class="searchButton" />
+      </form>
+
+      <button id="location-button" class="locationButton">
+        Current location
+      </button>
+    </div>
+    <span id="city" class="classCity"></span>
+    <div class="time">
+      <div id="day" class="classDay"></div>
+      <div id="hour" class="classHour"></div>
+    </div>
+    <div id="description" class="classDescription"></div>
+    <div class="tempDegree">
+      <div id="temperature" class="classTemp">
+        <h3>
+          17<span class="degreeSymbol">°</span><span class="celSymbol">c</span>
+        </h3>
+      </div>
+    </div>
+    <div id="humidity" class="humidity">Humidity</div>
+    <div id="wind" class="wind">Wind</div>
+    <script src="app.js"></script>
+  </body>
+</html>
